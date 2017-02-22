@@ -1,0 +1,1 @@
+This app uses google maps API and firebase-database. It takes coordinates of dustbins from database and then show them on map. Currently dustbin coordinates in database are of gwalior city.
