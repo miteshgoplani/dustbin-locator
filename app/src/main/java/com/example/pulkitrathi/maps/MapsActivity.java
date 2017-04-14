@@ -96,7 +96,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                 if(!lat_com.equals("") && !lon_com.equals("") ) {
                     // PUT YOUR DATABASE ADDRESS BELOW
-                    databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://dustbin-ed7c3.firebaseio.com/complaints/full");
+                    databaseReference = FirebaseDatabase.getInstance().getReference().child("complaints").child("full");
 
                     dustbin_db = databaseReference.push();
                     latitude_db = dustbin_db.child("latitude");
@@ -125,7 +125,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             public void onClick(View view) {
 
                 if(!lat_com.equals("") && !lon_com.equals("") ) {
-                    databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://dustbin-ed7c3.firebaseio.com/complaints/smelly");
+                    databaseReference = FirebaseDatabase.getInstance().getReference.child("complaints").child("smelly");
 
                     dustbin_db = databaseReference.push();
                     latitude_db = dustbin_db.child("latitude");
